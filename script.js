@@ -4,7 +4,7 @@ const extendHex = (shortHex) => {
 	let ans="#";
 
 	while(i<shortHex.length){
-		let ascii=shortHex[i].chatCodeAt(0);
+		let ascii=shortHex[i].charCodeAt(0);
 		if(ascii>=65 && ascii<=90){
 			isCapital=true;
 		}
@@ -12,7 +12,7 @@ const extendHex = (shortHex) => {
 		i++;
 	}
 
-	return isCapital ? ans.toUpperCase()  : ans ;
+	return isCapital ? ans.toUpperCase() : ans ;
 	
 };
 
